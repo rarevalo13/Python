@@ -10,16 +10,15 @@ ll = "40.8258195,-73.9544266"
 queryString = {
     'oauth_token':token,
     'v':version,
-    #'near':location,
+    'near':location,
     'query':query.replace(' ', "%20"),
     #'ll' : ll
-    'nearGeoId':672493
 }
 
-req = requests.get(endpoint + '/venues/search?', params=queryString)
+req = requests.get(endpoint + '/venues/explore?', params=queryString)
 print(req.url)
 json_data = req.json()
 resText = req.content
 
-for item in json_data:
-    print(json_data['response']['venues'][0]['location'])
+for value in json_data['response']['groups'][0]:
+    print(value['name'])
