@@ -66,6 +66,7 @@ elif header == 'custom':
         "product": 'Product',
         feed_source: fpath
 	}
+    sort_order = ['site', 'header', 'processor', 'root', 'product', 'feed_url']
 else:
     print (colored("¡WARNING! No header found, please review product feed.", 'red'))
     quit()
