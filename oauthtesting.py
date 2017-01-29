@@ -17,8 +17,8 @@ headers = {
 }
 
 
-req = requests.get(endpoint, params=query_string, headers=headers)
-print(req.cookies) #this just returns the URL from the req above
+req = requests.post(endpoint, params=query_string)
+print(req.content) #this just returns the URL from the req above
 
 
 
