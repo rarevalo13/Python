@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+</head>
+<body>
+<header>
+	<h1>Thread your Tweet</h1>
+</header>
+
+<div id="form">
+
+<div class="fish" id="fish"></div>
+<div class="fish" id="fish2"></div>
+
+<form id="waterform" method="post" action="callback.html">
+
+<div class="formgroup" id="handle-form">
+    <label for="handle">Your Handle*</label>
+    <input type="text" id="handle" name="handle" />
+</div>
+
+<div class="formgroup" id="hashtag-form">
+    <label for="hashtag">Your Hashtag</label>
+    <input type="text" id="hashtag" name="hashtag" />
+</div>
+
+<div class="formgroup" id="tweet-form">
+    <label for="tweet">Your Tweet</label>
+    <textarea id="tweet" name="tweet"></textarea>
+</div>
+
+	<input type="submit" value="Send your Tweet!" />
+    <small class="disclaimer">Please make sure you log into your twitter account.</small>
+</form>
+</div>
+</body>
+</html>

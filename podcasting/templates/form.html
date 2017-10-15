@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/react@15.3.2/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Form</title>
 </head>
 <body>
-$END$
+<form id="mainForm" action="http://localhost:5000/results", method="POST">
+    <input type="text" name="podcast" placeholder="Podcast You want to listen to.">,
+    <input type="submit" value="Submit"/>
+</form>
 </body>
 </html>
